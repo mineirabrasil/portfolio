@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <title>portfolio-thais</title>
     <style>
-
+        body > header{/* > ref à l'enfant du body*/
+            background:red;
+        }
+        header+main{/* + ref au frère DIRECT du header */
+            background: blue;/* commentaire en CSS */
+        }
     </style>
     <link rel="icon" href="image/favicon.ico">
 </head>
@@ -13,12 +18,12 @@
         <img src="image/thais_site_logo.jpg"
              alt="logo site">
         <nav></nav>
+        <nav><!--arborescence = fil d'ariane-->
+            <ul>
+                <li><a href="/">home</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav><!--arborescence = fil d'ariane-->
-        <ul>
-            <li><a href="/">home</a></li>
-        </ul>
-    </nav>
     <main>
         <section>
             <article>
@@ -121,6 +126,7 @@
             <li><a href="https://www.linkedin.com/in/tha%C3%AFs-dussart-29880760/">linkedin</a></li>
             <li><a href="https://www.instagram.com/t.h.a.i.s_passion/">instagram</a></li>
             <li><a href="mailto:mineirabrasil@free.fr">contact</a></li>
+            <li><a href="https://twitter.org">twitter</a></li>
         </ul>
     </footer>
 </body>
