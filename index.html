@@ -7,8 +7,11 @@
         body > header{/* > ref à l'enfant du body*/
             background:red;
         }
-        header+main{/* + ref au frère DIRECT du header */
+        header + main{/* + ref au frère DIRECT du header */
             background: blue;/* commentaire en CSS */
+        }
+        footer li:nth-child(2n+1){/*parent "espace" = li enfant INDIRECT de son parent footer*/
+            background: blueviolet;
         }
     </style>
     <link rel="icon" href="image/favicon.ico">
