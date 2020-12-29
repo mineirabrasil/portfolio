@@ -49,29 +49,53 @@
 
         /*start style*/
         body>header{
+            background: none;
+            padding-bottom: 5px;
+        }
+        body>header>section{
             background: orange;
             border: 2px solid black;
             padding: 8px;
         }
-        body>header img{
+        body>header>section img{
             border: 1px solid black;
             width: 60%;
             background: lightblue;
+            display: inline-block;
+            vertical-align: middle;
         }
-        body>header img+nav{
+        body>header>section nav{
             border-radius: 50%;
             background: lightblue;
-            height: 24px;
-            width: 24px;
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: right;
+            margin-left: calc( 39% - 100px );
+        }
+        body>header>nav {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            background: darkgrey !important;
+        }
+        body>header ul{
+            list-style: none outside none;
+            display: block;
+            margin:0;
+            padding: 0;
         }
     </style>
     <link rel="icon" href="image/favicon.ico">
 </head>
 <body>
     <header>
-        <img src="image/thais_site_logo.jpg"
-             alt="logo site">
-        <nav></nav>
+        <section>
+            <img src="image/thais_site_logo.jpg"
+                 alt="logo site">
+            <nav></nav>
+        </section>
         <nav id="ariane"><!--arborescence = fil d'ariane-->
             <ul>
                 <li><a href="/">home</a></li>
