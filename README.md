@@ -3,7 +3,7 @@
 => l'arrow ">" fait référence à un node de 1er niveau (= enfant direct)
        
 => le point. sert à  cibler une classe
-=> le # sert à cibler un ID
+=> le # sert à cibler un ID 
 => le + fait ref au frère DIRECT du header
 
 =>  footer li:nth-child(odd){

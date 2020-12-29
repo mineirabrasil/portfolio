@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>portfolio-thais</title>
     <style>
+        header #ariane{
+            background: crimson;
+        }
         .footer li:nth-child(2n+1){
             background: yellow;
         }
@@ -38,6 +41,10 @@
         footer li:nth-child(odd){
             background: green !important;
         }
+
+        #ariane{
+            background: greenyellow;
+        }
     </style>
     <link rel="icon" href="image/favicon.ico">
 </head>
@@ -46,7 +53,7 @@
         <img src="image/thais_site_logo.jpg"
              alt="logo site">
         <nav></nav>
-        <nav><!--arborescence = fil d'ariane-->
+        <nav id="ariane"><!--arborescence = fil d'ariane-->
             <ul>
                 <li><a href="/">home</a></li>
             </ul>
@@ -149,7 +156,7 @@
             </article>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer"><!--on a choisi "footer" mais ça aurait pu etre autre chose ex : "social-links" ligne du dessous-->
         <ul class="social-links"><!-- class= peut se répéter dans ma page-->
             <li style="background: cyan !important;"><a href="https://www.linkedin.com/in/tha%C3%AFs-dussart-29880760/">linkedin</a></li>
             <li><a href="https://www.instagram.com/t.h.a.i.s_passion/">instagram</a></li>
