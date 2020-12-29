@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <title>portfolio-thais</title>
     <style>
-        body > header{/* > ref à l'enfant du body*/
+        .footer li:nth-child(2n+1){
+            background: yellow;
+        }
+        /*
+        le point. sert à  cibler une classe
+        le # sert à cibler un ID
+        */
+        .footer .social-links > *:nth-child(even){
+            background: rebeccapurple;
+        }
+        /*
+        le > fait ref à l'enfant du body
+        */
+        body > header{
             background:red;
         }
-        header + main{/* + ref au frère DIRECT du header */
-            background: blue;/* commentaire en CSS */
+        header + main{
+            background: blue;
         }
-        footer li:nth-child(2n+1){/*parent "espace" = li enfant INDIRECT de son parent footer*/
+        /*
+        le + fait ref au frère DIRECT du header
+        */
+        footer li:nth-child(2n+1){
             background: blueviolet;
         }
-        footer li:nth-child(even){
+       footer li:nth-child(even){
             background: coral;
         }
+        /*
+        even = raccourci de 2n+1
+        */
         footer li:nth-child(odd){
-            background: green;
+            background: green !important;
         }
     </style>
     <link rel="icon" href="image/favicon.ico">
@@ -130,9 +149,9 @@
             </article>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/tha%C3%AFs-dussart-29880760/">linkedin</a></li>
+    <footer class="footer">
+        <ul class="social-links"><!-- class= peut se répéter dans ma page-->
+            <li style="background: cyan !important;"><a href="https://www.linkedin.com/in/tha%C3%AFs-dussart-29880760/">linkedin</a></li>
             <li><a href="https://www.instagram.com/t.h.a.i.s_passion/">instagram</a></li>
             <li><a href="mailto:mineirabrasil@free.fr">contact</a></li>
             <li><a href="https://twitter.org">twitter</a></li>
