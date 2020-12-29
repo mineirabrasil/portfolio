@@ -64,15 +64,20 @@
             display: inline-block;
             vertical-align: middle;
         }
-        body>header>section nav{
+        body>header>section div{
+            width: calc( 40% - 7px);
+            display: inline-block;
+            vertical-align: middle;
+            text-align: right;
+        }
+        body>header>section div nav{
             border-radius: 50%;
             background: lightblue;
             height: 100px;
             width: 100px;
             display: inline-block;
-            vertical-align: middle;
             text-align: right;
-            margin-left: calc( 39% - 100px );
+            /* margin-left: calc( 39% - 100px ); */
         }
         body>header>nav {
             width: 90%;
@@ -92,9 +97,10 @@
 <body>
     <header>
         <section>
-            <img src="image/thais_site_logo.jpg"
-                 alt="logo site">
-            <nav></nav>
+            <img src="image/thais_site_logo.jpg" alt="logo site">
+            <div>
+                 <nav></nav>
+            </div>
         </section>
         <nav id="ariane"><!--arborescence = fil d'ariane-->
             <ul>
