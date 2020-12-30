@@ -56,28 +56,22 @@
             background: orange;
             border: 2px solid black;
             padding: 8px;
+            display: flex;
         }
         body>header>section img{
             border: 1px solid black;
             width: 60%;
             background: lightblue;
-            display: inline-block;
-            vertical-align: middle;
+            align-self: stretch;
+
         }
-        body>header>section div{
-            width: calc( 40% - 7px);
-            display: inline-block;
-            vertical-align: middle;
-            text-align: right;
-        }
-        body>header>section div nav{
+        body>header>section nav{
             border-radius: 50%;
             background: lightblue;
             height: 100px;
             width: 100px;
-            display: inline-block;
-            text-align: right;
-            /* margin-left: calc( 39% - 100px ); */
+            align-self: center;
+            margin-left: auto;
         }
         body>header>nav {
             width: 90%;
@@ -97,10 +91,9 @@
 <body>
     <header>
         <section>
-            <img src="image/thais_site_logo.jpg" alt="logo site">
-            <div>
-                 <nav></nav>
-            </div>
+            <img src="image/thais_site_logo.jpg"
+                 alt="logo site">
+            <nav></nav>
         </section>
         <nav id="ariane"><!--arborescence = fil d'ariane-->
             <ul>
