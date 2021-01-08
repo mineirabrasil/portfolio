@@ -56,7 +56,8 @@
             background: orange;
             border: 2px solid black;
             padding: 8px;
-            display: flex;
+            display: grid;
+            grid-template-columns: 620px 600px;
         }
         /*
         par defaut la page web est TOUJOURS en display block
@@ -65,27 +66,15 @@
             border: 1px solid black;
             width: 60%;
             background: lightblue;
-            align-self: stretch;
+            grid-column: 1;
         }
-        body>header>section div{
-            display: flex;
-            width: 40%;
-            justify-content:flex-end;
-            align-items: center;
-        }
-        /*
-        balise parent pilote l'alignement ici centrer l'item enfant
-        */
-
-        body>header>section div nav{
+        body>header>section nav{
             border-radius: 50%;
             background: lightblue;
             height: 100px;
             width: 100px;
+            grid-column: 2;
         }
-        /*
-        align-self: center; = correct mais QUE pour cet item préférable de le mettre dans la balise parent
-        */
         body>header>nav {
             width: 90%;
             margin-left: 5%;
@@ -106,9 +95,7 @@
         <section>
             <img src="image/thais_site_logo.jpg"
                  alt="logo site">
-            <div>
-                <nav></nav>
-            </div>
+            <nav></nav>
         </section>
         <nav id="ariane"><!--arborescence = fil d'ariane-->
             <ul>
