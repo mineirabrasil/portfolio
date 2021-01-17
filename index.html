@@ -57,7 +57,9 @@
             border: 2px solid black;
             padding: 8px;
             display: grid;
-            grid-template-columns: 1100px 119px;
+            grid-template-columns: repeat(10, 1fr);
+            grid-gap: 0;
+            grid-auto-rows: minmax(100px, auto);
         }
         /*
         par defaut la page web est TOUJOURS en display block
@@ -66,16 +68,18 @@
             border: 1px solid black;
             width: 60%;
             background: lightblue;
-            grid-column: 1;
+            grid-column: 1 /7;
+            grid-row: 1;
         }
         body>header>section nav{
             border-radius: 50%;
             background: lightblue;
             height: 100px;
             width: 100px;
-            grid-column: 2;
-            gap: 600px;
+            grid-column: 7 / 11;
+            grid-row: 1;
             justify-self: end;
+            align-self: center; /* correct à l'inspection de la page mais incorrect visuellement */
         }
         body>header>nav {
             width: 90%;
